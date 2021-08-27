@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+header{
+    background: #eeeeee;
+}
+
+.headerInner{
+    max-width: 650px;   /* 横幅 */
+    height: 100px;  /* 高さ */
+    margin: auto;   /* 真ん中にオート */
+    display: flex;  /* お問い合わせが横に来る */
+    justify-content: space-between; /* お問い合わせ系 */
+    align-items: center;    /* お問い合わせ系 */
+    padding: 0 20px
+}
+
+.mainInner{
+    /* mainInner中の記述 */
+    max-width: 650px;
+    margin: auto;
+    padding: 0 20px
+}
+
+footer{
+    /* コピーライトの色 */
+    background: #eeeeee;
+}
+
+.footerInner{
+    /* コピーライトのところ */
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+
+/* キービジュアル(タイトルバナー)の画像をセンターにする */
+.keyVisual{
+    text-align: center;
+}
+
+.priceWrapper table,
+.priceWrapper th,
+.priceWrapper td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.priceWrapper th,
+.priceWrapper td{
+    padding: 7px;
+}
+
+.priceWrapper table{
+    width: 100%;
+}
+
+.priceWrapper th{
+    width: 150px;
+    background: #eee;
+}
