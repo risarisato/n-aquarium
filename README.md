@@ -1,2 +1,2 @@
 # n-aquarium
-https://github.com/risarisato/n-aquarium/blob/gh-pages/index.html
+https://risarisato.github.io/n-aquarium/
