@@ -61,3 +61,25 @@ footer{
     width: 150px;
     background: #eee;
 }
+
+/* h2タグ見出しに背景を画像にして、文字・文字色・センターなど変更 */
+h2{
+    background-image: url("./image/niconico_bg_blue.png");
+    line-height: 50px;
+    padding: 0 15px;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* aboutwrapperとclearfixはセットで使っている */
+  /* .aboutWrapperの拡張子imgのクラスを「float」画像の回り込み指定 */
+.aboutWrapper img{
+    float:left;
+    margin-right: 10px;
+}
+/* 画像の回り込みが崩れるので「clearfix」をする */
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
