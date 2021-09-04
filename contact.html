@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>N水族館</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="headerInner">
+      <h1 class="logo"><img src="./image/naqualogo.png" width="150" height="64" alt=""></h1>
+      <nav class="globalNav">
+        <a href="thanks.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- h1タグは1番大きな見出し重要性が高い -->
+    <h1>お問い合わせフォーム</h1>
+    <!-- from actionタグ＞問い合わせ完了になる -->
+    <form action="thanks.html">
+      <table class="contactForm">
+        <tr>
+          <td><label for="name">お名前</label></td>
+          <td><input type="text" name="name" placeholder="名前を入れてください"></td>
+        </tr>
+        <tr>
+          <th>性別</td>
+            <td>
+              <input type="radio" name="gender" id="male" value="male"><label for="male">男性</label>
+              <input type="radio" name="gender" id="female" value="female"><label for="female">女性</label>
+            </td>
+        </tr>
+        <tr>
+            <th>年齢</td>
+          <td>
+            <div class="selectBox">
+              <select name="age" id="">
+                <option value="10">10代</option>
+                <option value="20">20代</option>
+                <option value="30">30代</option>
+                <option value="40">40代</option>
+                <option value="other">それ以上</option>
+              </select>
+            </div>
+          </td>
+      </tr>
+        <!-- 題名はthタグは見出し、tdは中身と考える -->
+        <tr>
+          <td><label for="title">タイトル</label></td>
+          <!-- 半透明の文字＞プレイスフォルダ(placeholder)という＝タイトルをいれてください -->
+          <td><input type="text" name="title" placeholder="タイトルを入れてください"></td>
+        </tr>
+        <tr>
+          <td><label for="comment">質問内容</label></td>
+          <td><textarea name="comment" cols="30" rows="10"></textarea></td>　
+        </tr>
+      </table>
+      <div class="text-center">
+        <!-- id="check、label for="check"があるから、個人情報のところでクリックしてもcheckされる-->
+        <input type="checkbox" id="check"><label for="check">個人情報の取扱に同意する</label>
+      </div>
+      <div class="text-center">
+      <input type="submit" value="送信するボタン">
+      </div>
+    </form>
+
+    <!--
+    <p>ラジオボタン考え方 name=”同一にしなといくつも選択できる”</p>
+    <input type="radio" name="answer1" value="good">良かった
+    <input type="radio" name="answer2" value="normal">ふつう
+    <input type="radio" name="answer3" value="bad">悪かった
+
+    <p>checkボタンの「valueはサーバへ送る値のこと」</p>
+    <input type="checkbox" name="food" value="sushi">お寿司
+    <input type="checkbox" name="food" value="tempura">天ぷら
+    <input type="checkbox" name="food" value="yakiniku">焼き肉
+    <input type="checkbox" name="food" value="steak">ステーキ
+    <input type="checkbox" name="food" value="shabushabu">しゃぶしゃぶ
+
+    <p>セレクトボックス</p>
+    <select name="answer">
+      <option value="good">良かった</option>
+      <option value="normal">ふつう</option>
+      <option value="bad">悪かった</option>
+    </select>
+
+    <p>ファイルを選択する</p>
+    <input name="myFile" type="file">
+    -->
+  </main>
+
+  <footer>
+    <div class="footerInner">
+      <small>&copy; N水族館 2018</small>
+    </div>
+  </footer>
+</body>
+
+</html>
